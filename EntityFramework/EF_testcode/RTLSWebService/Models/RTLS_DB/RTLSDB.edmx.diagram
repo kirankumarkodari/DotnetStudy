@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0fbd43cbea5a433ca546e56747e34dfc" Name="Diagram1">
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.Cloud_persons_images" PointX="11.75" PointY="8.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_DEPARTMENTS" PointX="0.75" PointY="1.375" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_DESIGNATIONS" PointX="0.75" PointY="4.375" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_GATEWAY" PointX="7.75" PointY="1.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_LOGINS" PointX="11.75" PointY="11.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_ONLINEPERSONSTATUS" PointX="5.25" PointY="1.25" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_PERSONDTLS" PointX="3" PointY="3.375" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_PERSONSIMEIDATA" PointX="11.75" PointY="5.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_PERSONSTATUS" PointX="5.25" PointY="7.25" Width="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_PERTRKFAULTINFO" PointX="4.75" PointY="10.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_RESCUE_TEAM_MEMBERS" PointX="2.75" PointY="10.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_SMS_TRANSACTIONS" PointX="9.75" PointY="8.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_STATUSES" PointX="9.75" PointY="5.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_TAG_ZONE_CONFIG" PointX="12.25" PointY="2" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_Zone_Category" PointX="7.75" PointY="11" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_ZONEDTLS" PointX="10" PointY="1" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_FAULT_DTLS" PointX="0.75" PointY="8.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_PERSONSTATUS_HISTORY" PointX="7.75" PointY="7.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_PERTRK_CONFIG" PointX="13.75" PointY="4.75" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_SYNC_DTLS" PointX="7.75" PointY="5.75" Width="1.5" IsExpanded="true" />
+        <AssociationConnector ManuallyRouted="false" Association="tata_rakshak_dbModel.RTLS_PERSONDTLS_DEPT_FK" />
+        <AssociationConnector ManuallyRouted="false" Association="tata_rakshak_dbModel.RTLS_PERSONDTLS_DESG_FK" />
+        <AssociationConnector ManuallyRouted="false" Association="tata_rakshak_dbModel.RTLS_ZONEDTLS_GID_FK" />
+        <AssociationConnector ManuallyRouted="false" Association="tata_rakshak_dbModel.RTLS_ONLINEPERSONSTATUS_FK" />
+        <AssociationConnector ManuallyRouted="false" Association="tata_rakshak_dbModel.RTLS_PERSONSTATUS_fk" />
+        <AssociationConnector ManuallyRouted="false" Association="tata_rakshak_dbModel.RTLS_TAG_ZONE_CONFIG_fk" />
+        <AssociationConnector ManuallyRouted="false" Association="tata_rakshak_dbModel.RTLS_ZONEDTLS_safe_unsafe_FKs" />
+        <EntityTypeShape EntityType="tata_rakshak_dbModel.RTLS_SpotLevelMap" Width="1.5" PointX="5.375" PointY="13.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

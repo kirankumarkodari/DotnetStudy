@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="tata_rakshak-Web.config Connection String" description="tata_rakshak Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.RTLS_DB.RTLSDB.csdl|res://*/Models.RTLS_DB.RTLSDB.ssdl|res://*/Models.RTLS_DB.RTLSDB.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=efftronicsserver.database.windows.net;initial catalog=rtls_db;user id=Efftronics;password=Effiot@123;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\RTLS_WebService\\Final\ Codes\\RTLSWebService\ Efftronics\\RTLSWebService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='tata_rakshak']/@connectionString" />
+  </parameter>
+</parameters>

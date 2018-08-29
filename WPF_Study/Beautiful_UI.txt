@@ -1,0 +1,33 @@
+1) Designing and Implementing Windows Form Beautifully.
+https://www.youtube.com/watch?v=tgqKd7l7_s8
+2) WPF Tutorial.
+http://www.wpf-tutorial.com/
+
+3) Main Differences between WPF and Windows Forms 
+http://www.differencebetween.net/technology/difference-between-wpf-and-windows-forms/
+
+4) Creating Customized form with WPF
+
+Xamarin is the Framework to be used for Developing Cross platform application.
+
+5) Placeholder in textbox in WPF.
+http://www.techken.in/coding/c-wpf-create-textbox-placeholder-using-xaml-code/
+
+6) Nice !! tutorial about Xaml developement 
+https://msdn.microsoft.com/en-us/library/ff921086(v=pandp.20).aspx
+
+7) Ribbon Buttons 
+http://www.abhisheksur.com/2010/08/introducing-ribbon-ui-control-for-wpf.html
+
+8) Xaml Introduction 
+https://www.youtube.com/watch?v=-4fOPIz2s_U
+
+9) Material Design Xaml
+https://github.com/ButchersBoy/MaterialDesignInXamlToolkit
+
+10) DataBinding in Xaml
+https://www.youtube.com/watch?v=545NoF7Sab4
+
+
+
+

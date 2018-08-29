@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="rtlsdbStoreContainer" CdmEntityContainer="rtlsdbEntities">
+    <EntitySetMapping Name="RTLS_DEPARTMENTS">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_DEPARTMENTS">
+        <MappingFragment StoreEntitySet="RTLS_DEPARTMENTS">
+          <ScalarProperty Name="dept_id" ColumnName="dept_id" />
+          <ScalarProperty Name="dept_name" ColumnName="dept_name" />
+          <ScalarProperty Name="actinact" ColumnName="actinact" />
+          <ScalarProperty Name="created_time" ColumnName="created_time" />
+          <ScalarProperty Name="opeartion_type" ColumnName="opeartion_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_DESIGNATIONS">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_DESIGNATIONS">
+        <MappingFragment StoreEntitySet="RTLS_DESIGNATIONS">
+          <ScalarProperty Name="desg_id" ColumnName="desg_id" />
+          <ScalarProperty Name="desg_name" ColumnName="desg_name" />
+          <ScalarProperty Name="actinact" ColumnName="actinact" />
+          <ScalarProperty Name="created_time" ColumnName="created_time" />
+          <ScalarProperty Name="opeartion_type" ColumnName="opeartion_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_GATEWAY">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_GATEWAY">
+        <MappingFragment StoreEntitySet="RTLS_GATEWAY">
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="gateway_name" ColumnName="gateway_name" />
+          <ScalarProperty Name="gateway_ip" ColumnName="gateway_ip" />
+          <ScalarProperty Name="gateway_port" ColumnName="gateway_port" />
+          <ScalarProperty Name="actinact" ColumnName="actinact" />
+          <ScalarProperty Name="created_time" ColumnName="created_time" />
+          <ScalarProperty Name="opeartion_type" ColumnName="opeartion_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_LOGINS">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_LOGINS">
+        <MappingFragment StoreEntitySet="RTLS_LOGINS">
+          <ScalarProperty Name="SID" ColumnName="SID" />
+          <ScalarProperty Name="LOG_TYPE" ColumnName="LOG_TYPE" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="ACTINACT" ColumnName="ACTINACT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_PERSONDTLS">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_PERSONDTLS">
+        <MappingFragment StoreEntitySet="RTLS_PERSONDTLS">
+          <ScalarProperty Name="PERSON_ID" ColumnName="PERSON_ID" />
+          <ScalarProperty Name="TAG_ID" ColumnName="TAG_ID" />
+          <ScalarProperty Name="PERSONNAME" ColumnName="PERSONNAME" />
+          <ScalarProperty Name="DEPARTMENT_id" ColumnName="DEPARTMENT_id" />
+          <ScalarProperty Name="DESIGNATION_id" ColumnName="DESIGNATION_id" />
+          <ScalarProperty Name="MOBILE_NO" ColumnName="MOBILE_NO" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+          <ScalarProperty Name="Assigned_time" ColumnName="Assigned_time" />
+          <ScalarProperty Name="Un_Assigned_time" ColumnName="Un_Assigned_time" />
+          <ScalarProperty Name="ACTINACT" ColumnName="ACTINACT" />
+          <ScalarProperty Name="OPERATION_TYPE" ColumnName="OPERATION_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_PERSONSIMEIDATA">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_PERSONSIMEIDATA">
+        <MappingFragment StoreEntitySet="RTLS_PERSONSIMEIDATA">
+          <ScalarProperty Name="IMEI" ColumnName="IMEI" />
+          <ScalarProperty Name="created_time" ColumnName="created_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_PERTRKFAULTINFO">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_PERTRKFAULTINFO">
+        <MappingFragment StoreEntitySet="RTLS_PERTRKFAULTINFO">
+          <ScalarProperty Name="FLTNO" ColumnName="FLTNO" />
+          <ScalarProperty Name="FLTNAME" ColumnName="FLTNAME" />
+          <ScalarProperty Name="FLTDESC" ColumnName="FLTDESC" />
+          <ScalarProperty Name="FLTLEVEL" ColumnName="FLTLEVEL" />
+          <ScalarProperty Name="CREATEDTIME" ColumnName="CREATEDTIME" />
+          <ScalarProperty Name="OPERATION_TYPE" ColumnName="OPERATION_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_SMS_TRANSACTIONS">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_SMS_TRANSACTIONS">
+        <MappingFragment StoreEntitySet="RTLS_SMS_TRANSACTIONS">
+          <ScalarProperty Name="SMS_ID" ColumnName="SMS_ID" />
+          <ScalarProperty Name="PEROSN_ID" ColumnName="PEROSN_ID" />
+          <ScalarProperty Name="TAGID" ColumnName="TAGID" />
+          <ScalarProperty Name="FLTNO" ColumnName="FLTNO" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="SENDER_ID" ColumnName="SENDER_ID" />
+          <ScalarProperty Name="PROVIDER" ColumnName="PROVIDER" />
+          <ScalarProperty Name="REC_MOBILENO" ColumnName="REC_MOBILENO" />
+          <ScalarProperty Name="TEAM_ID" ColumnName="TEAM_ID" />
+          <ScalarProperty Name="MSG" ColumnName="MSG" />
+          <ScalarProperty Name="SENT_NOTSENT" ColumnName="SENT_NOTSENT" />
+          <ScalarProperty Name="SENT_TIME" ColumnName="SENT_TIME" />
+          <ScalarProperty Name="IS_DELIVERED" ColumnName="IS_DELIVERED" />
+          <ScalarProperty Name="DELIVERED_TIME" ColumnName="DELIVERED_TIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_STATUSES">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_STATUSES">
+        <MappingFragment StoreEntitySet="RTLS_STATUSES">
+          <ScalarProperty Name="STATUS_NO" ColumnName="STATUS_NO" />
+          <ScalarProperty Name="STATUSNAME" ColumnName="STATUSNAME" />
+          <ScalarProperty Name="OPERATION_TYPE" ColumnName="OPERATION_TYPE" />
+          <ScalarProperty Name="CREATEDTIME" ColumnName="CREATEDTIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_Zone_Category">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_Zone_Category">
+        <MappingFragment StoreEntitySet="RTLS_Zone_Category">
+          <ScalarProperty Name="ZCAT_NAME" ColumnName="ZCAT_NAME" />
+          <ScalarProperty Name="ZCAT_NO" ColumnName="ZCAT_NO" />
+          <ScalarProperty Name="operation_type" ColumnName="operation_type" />
+          <ScalarProperty Name="CREATEDTIME" ColumnName="CREATEDTIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_ZONEDTLS">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_ZONEDTLS">
+        <MappingFragment StoreEntitySet="RTLS_ZONEDTLS">
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="zone_id" ColumnName="zone_id" />
+          <ScalarProperty Name="zone_name" ColumnName="zone_name" />
+          <ScalarProperty Name="area" ColumnName="area" />
+          <ScalarProperty Name="safe_unsafe" ColumnName="safe_unsafe" />
+          <ScalarProperty Name="BS_SIGNALSTRENGTH" ColumnName="BS_SIGNALSTRENGTH" />
+          <ScalarProperty Name="BS_BATTERY_STATUS_VAL" ColumnName="BS_BATTERY_STATUS_VAL" />
+          <ScalarProperty Name="BS_BATTERY_STATUS_PERCNT" ColumnName="BS_BATTERY_STATUS_PERCNT" />
+          <ScalarProperty Name="POWERON" ColumnName="POWERON" />
+          <ScalarProperty Name="actinact" ColumnName="actinact" />
+          <ScalarProperty Name="created_time" ColumnName="created_time" />
+          <ScalarProperty Name="oparation_type" ColumnName="oparation_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_FAULT_DTLS">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_FAULT_DTLS">
+        <MappingFragment StoreEntitySet="RTLS_FAULT_DTLS">
+          <ScalarProperty Name="ZONE_ID" ColumnName="ZONE_ID" />
+          <ScalarProperty Name="faultno" ColumnName="faultno" />
+          <ScalarProperty Name="fltname" ColumnName="fltname" />
+          <ScalarProperty Name="FLTINFO" ColumnName="FLTINFO" />
+          <ScalarProperty Name="PERSON_ID" ColumnName="PERSON_ID" />
+          <ScalarProperty Name="TAG_ID" ColumnName="TAG_ID" />
+          <ScalarProperty Name="DLTIME" ColumnName="DLTIME" />
+          <ScalarProperty Name="DLYEAR" ColumnName="DLYEAR" />
+          <ScalarProperty Name="ORC_DATETIME" ColumnName="ORC_DATETIME" />
+          <ScalarProperty Name="CLEARED_TIME" ColumnName="CLEARED_TIME" />
+          <ScalarProperty Name="CLEAREDYEAR" ColumnName="CLEAREDYEAR" />
+          <ScalarProperty Name="CLEARED_DATETIME" ColumnName="CLEARED_DATETIME" />
+          <ScalarProperty Name="FAULTLEVEL" ColumnName="FAULTLEVEL" />
+          <ScalarProperty Name="CREATED_TIME" ColumnName="CREATED_TIME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_ONLINEPERSONSTATUS">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_ONLINEPERSONSTATUS">
+        <MappingFragment StoreEntitySet="RTLS_ONLINEPERSONSTATUS">
+          <ScalarProperty Name="PERSONID" ColumnName="PERSONID" />
+          <ScalarProperty Name="TAGID" ColumnName="TAGID" />
+          <ScalarProperty Name="Zone_ID" ColumnName="Zone_ID" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="TAG_SIGNALSTRENGTH" ColumnName="TAG_SIGNALSTRENGTH" />
+          <ScalarProperty Name="BS_SIGNALSTRENGTH" ColumnName="BS_SIGNALSTRENGTH" />
+          <ScalarProperty Name="INTIME" ColumnName="INTIME" />
+          <ScalarProperty Name="ALLISNOTWELLTIME" ColumnName="ALLISNOTWELLTIME" />
+          <ScalarProperty Name="PANICTIME" ColumnName="PANICTIME" />
+          <ScalarProperty Name="NOMOTIONTIME" ColumnName="NOMOTIONTIME" />
+          <ScalarProperty Name="OUT_TIME" ColumnName="OUT_TIME" />
+          <ScalarProperty Name="FOUT_TIME" ColumnName="FOUT_TIME" />
+          <ScalarProperty Name="TEMPEXCEEDTIME" ColumnName="TEMPEXCEEDTIME" />
+          <ScalarProperty Name="LOW_BATTERY_TIME" ColumnName="LOW_BATTERY_TIME" />
+          <ScalarProperty Name="LASTUPDATEDTIME" ColumnName="LASTUPDATEDTIME" />
+          <ScalarProperty Name="TAG_BATTERY_STATUS_VAL" ColumnName="TAG_BATTERY_STATUS_VAL" />
+          <ScalarProperty Name="TAG_BATTERY_STATUS_PERCNT" ColumnName="TAG_BATTERY_STATUS_PERCNT" />
+          <ScalarProperty Name="BS_BATTERY_STATUS_VAL" ColumnName="BS_BATTERY_STATUS_VAL" />
+          <ScalarProperty Name="BS_BATTERY_STATUS_PERCNT" ColumnName="BS_BATTERY_STATUS_PERCNT" />
+          <ScalarProperty Name="created_time" ColumnName="created_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_PERSONSTATUS">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_PERSONSTATUS">
+        <MappingFragment StoreEntitySet="RTLS_PERSONSTATUS">
+          <ScalarProperty Name="person_id" ColumnName="person_id" />
+          <ScalarProperty Name="tagid" ColumnName="tagid" />
+          <ScalarProperty Name="zone_id" ColumnName="zone_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="stime" ColumnName="stime" />
+          <ScalarProperty Name="created_time" ColumnName="created_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_PERSONSTATUS_HISTORY">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_PERSONSTATUS_HISTORY">
+        <MappingFragment StoreEntitySet="RTLS_PERSONSTATUS_HISTORY">
+          <ScalarProperty Name="person_id" ColumnName="person_id" />
+          <ScalarProperty Name="tagid" ColumnName="tagid" />
+          <ScalarProperty Name="zone_id" ColumnName="zone_id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="stime" ColumnName="stime" />
+          <ScalarProperty Name="created_time" ColumnName="created_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_SYNC_DTLS">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_SYNC_DTLS">
+        <MappingFragment StoreEntitySet="RTLS_SYNC_DTLS">
+          <ScalarProperty Name="last_sync_time" ColumnName="last_sync_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RTLS_TAG_ZONE_CONFIG">
+      <EntityTypeMapping TypeName="rtlsdb.RTLS_TAG_ZONE_CONFIG">
+        <MappingFragment StoreEntitySet="RTLS_TAG_ZONE_CONFIG">
+          <ScalarProperty Name="TAGID" ColumnName="TAGID" />
+          <ScalarProperty Name="ZONE_ID" ColumnName="ZONE_ID" />
+          <ScalarProperty Name="CREATEDTIME" ColumnName="CREATEDTIME" />
+          <ScalarProperty Name="OPERATION_TYPE" ColumnName="OPERATION_TYPE" />
+          <ScalarProperty Name="PERSONDTLS_PERSON_ID" ColumnName="PERSONDTLS_PERSON_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

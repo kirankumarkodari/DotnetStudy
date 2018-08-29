@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="efftronicsrtls" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\RTLS_WebService\\Final\ Codes\\RTLSWebService\ Efftronics\\RTLSWebService\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\RTLS_WebService\\Final\ Codes\\RTLSWebService\ Efftronics\\RTLSWebService\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="tata_rakshak-Web.config Connection String" description="" value="metadata=res://*/Models.RTLS_DB.RTLSDB.csdl|res://*/Models.RTLS_DB.RTLSDB.ssdl|res://*/Models.RTLS_DB.RTLSDB.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=tcp:efftronicsserver.database.windows.net,1433;Initial Catalog=rtls_db;User Id=Efftronics@efftronicsserver.database.windows.net;Password=Effiot@123&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\RTLS_WebService\\Final\ Codes\\RTLSWebService\ Efftronics\\RTLSWebService\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='tata_rakshak']/@connectionString" />
+  </parameter>
+</parameters>

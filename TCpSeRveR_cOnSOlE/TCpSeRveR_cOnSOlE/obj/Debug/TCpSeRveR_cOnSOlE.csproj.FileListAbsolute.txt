@@ -1,0 +1,6 @@
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\TCpSeRveR_cOnSOlE\TCpSeRveR_cOnSOlE\bin\Debug\TCpSeRveR_cOnSOlE.exe.config
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\TCpSeRveR_cOnSOlE\TCpSeRveR_cOnSOlE\bin\Debug\TCpSeRveR_cOnSOlE.exe
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\TCpSeRveR_cOnSOlE\TCpSeRveR_cOnSOlE\bin\Debug\TCpSeRveR_cOnSOlE.pdb
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\TCpSeRveR_cOnSOlE\TCpSeRveR_cOnSOlE\obj\Debug\TCpSeRveR_cOnSOlE.csprojResolveAssemblyReference.cache
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\TCpSeRveR_cOnSOlE\TCpSeRveR_cOnSOlE\obj\Debug\TCpSeRveR_cOnSOlE.exe
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\TCpSeRveR_cOnSOlE\TCpSeRveR_cOnSOlE\obj\Debug\TCpSeRveR_cOnSOlE.pdb

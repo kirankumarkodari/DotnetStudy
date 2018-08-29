@@ -1,0 +1,6 @@
+--> Data types in Access DB 
+https://www.accessallinone.com/field-data-types/
+--> Table creation in Access DB 
+https://msdn.microsoft.com/en-us/vba/access-vba/articles/create-and-delete-tables-and-indexes-using-access-sql
+--> Altering Table in Access DB 
+https://msdn.microsoft.com/en-us/library/office/ff196148.aspx

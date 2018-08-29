@@ -1,0 +1,1 @@
+D:\Study\Dotnet\Learning_Excersizes\TimeLapseCreator\TimeLapseCreator\bin\Debug\TimeLapseCreator.exe.config

@@ -1,0 +1,14 @@
+Diff between Async and Await.
+1) https://stackoverflow.com/questions/34680985/what-is-the-difference-between-asynchronous-programming-and-multithreading.
+
+Aync and Await Tutorial( It is Mainly to use the single core efficiently ) 
+
+1) http://www.c-sharpcorner.com/article/async-and-await-in-c-sharp/
+2) https://www.youtube.com/watch?v=C5VhaxQWcpE
+
+In Async method await should be used to run the method asychronously (cpu-bound)
+
+Network Programming 
+1) I should change the Tcp CLient to Socket , so that only i will be able to detect the Client connection has lost or not. 
+
+

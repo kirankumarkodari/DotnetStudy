@@ -1,0 +1,104 @@
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\roslyn\csc.exe
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\roslyn\System.Collections.Immutable.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\roslyn\System.Reflection.Metadata.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\roslyn\vbc.exe
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\roslyn\VBCSCompiler.exe
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\roslyn\VBCSCompiler.exe.config
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\RTLSWebService.dll.config
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\RTLSWebService.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\RTLSWebService.pdb
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\EntityFramework.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\EntityFramework.SqlServer.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\Microsoft.Azure.NotificationHubs.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\Newtonsoft.Json.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\System.Net.Http.Formatting.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\System.Web.Http.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\System.Web.Http.WebHost.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\EntityFramework.xml
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\EntityFramework.SqlServer.xml
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\Microsoft.Azure.NotificationHubs.xml
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\Newtonsoft.Json.xml
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\System.Net.Http.Formatting.xml
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\System.Web.Http.xml
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\bin\System.Web.Http.WebHost.xml
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\obj\Debug\RTLSWebService.dll
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\obj\Debug\RTLSWebService.pdb
+D:\RTLS_WebService\RTLSWebService\RTLSWebService\obj\Debug\RTLSWebService.csprojResolveAssemblyReference.cache
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\roslyn\csc.exe
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\roslyn\System.Collections.Immutable.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\roslyn\System.Reflection.Metadata.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\roslyn\vbc.exe
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\roslyn\VBCSCompiler.exe
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\roslyn\VBCSCompiler.exe.config
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\RTLSWebService.dll.config
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\RTLSWebService.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\RTLSWebService.pdb
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\EntityFramework.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\EntityFramework.SqlServer.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\Microsoft.Azure.NotificationHubs.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\Newtonsoft.Json.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\System.Net.Http.Formatting.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\System.Web.Http.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\System.Web.Http.WebHost.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\EntityFramework.xml
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\EntityFramework.SqlServer.xml
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\Microsoft.Azure.NotificationHubs.xml
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\Newtonsoft.Json.xml
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\System.Net.Http.Formatting.xml
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\System.Web.Http.xml
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\bin\System.Web.Http.WebHost.xml
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\obj\Debug\RTLSWebService.dll
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\obj\Debug\RTLSWebService.pdb
+D:\RTLS_WebService\RTLSWebService TataRakshak\RTLSWebService\obj\Debug\RTLSWebService.csprojResolveAssemblyReference.cache
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\roslyn\csc.exe
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\roslyn\System.Collections.Immutable.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\roslyn\System.Reflection.Metadata.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\roslyn\vbc.exe
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\roslyn\VBCSCompiler.exe
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\roslyn\VBCSCompiler.exe.config
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\RTLSWebService.dll.config
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\RTLSWebService.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\RTLSWebService.pdb
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\EntityFramework.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\EntityFramework.SqlServer.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\Microsoft.Azure.NotificationHubs.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\Newtonsoft.Json.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\System.Net.Http.Formatting.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\System.Web.Http.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\System.Web.Http.WebHost.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\EntityFramework.xml
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\EntityFramework.SqlServer.xml
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\Microsoft.Azure.NotificationHubs.xml
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\Newtonsoft.Json.xml
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\System.Net.Http.Formatting.xml
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\System.Web.Http.xml
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\bin\System.Web.Http.WebHost.xml
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\obj\Debug\RTLSWebService.dll
+D:\RTLS_WebService\Final Codes\RTLSWebService Efftronics\RTLSWebService\obj\Debug\RTLSWebService.pdb

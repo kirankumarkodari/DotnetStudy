@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="tata_rakshak_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Cloud_persons_images">
+    <Key>
+      <PropertyRef Name="img_name" />
+    </Key>
+    <Property Name="img_name" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="Person_img" Nullable="false" MaxLength="Max" FixedLength="false" Type="Binary" />
+    <Property Name="Img_ext" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="Createdtime" Nullable="false" Precision="3" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="RTLS_DEPARTMENTS">
+    <Key>
+      <PropertyRef Name="dept_id" />
+    </Key>
+    <Property Name="dept_id" Nullable="false" Precision="5" Scale="0" annotation:StoreGeneratedPattern="Identity" Type="Decimal" />
+    <Property Name="dept_name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="actinact" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+    <Property Name="created_time" Nullable="false" Precision="3" Type="DateTime" />
+    <Property Name="opeartion_type" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+    <NavigationProperty Name="RTLS_PERSONDTLS" Relationship="Self.RTLS_PERSONDTLS_DEPT_FK" FromRole="RTLS_DEPARTMENTS" ToRole="RTLS_PERSONDTLS" />
+  </EntityType>
+  <EntityType Name="RTLS_DESIGNATIONS">
+    <Key>
+      <PropertyRef Name="desg_id" />
+    </Key>
+    <Property Name="desg_id" Nullable="false" Precision="5" Scale="0" annotation:StoreGeneratedPattern="Identity" Type="Decimal" />
+    <Property Name="desg_name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="actinact" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+    <Property Name="created_time" Nullable="false" Precision="3" Type="DateTime" />
+    <Property Name="opeartion_type" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+    <NavigationProperty Name="RTLS_PERSONDTLS" Relationship="Self.RTLS_PERSONDTLS_DESG_FK" FromRole="RTLS_DESIGNATIONS" ToRole="RTLS_PERSONDTLS" />
+  </EntityType>
+  <EntityType Name="RTLS_GATEWAY">
+    <Key>
+      <PropertyRef Name="gid" />
+    </Key>
+    <Property Name="gid" Nullable="false" Precision="10" Scale="0" Type="Decimal" />
+    <Property Name="gateway_name" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="gateway_ip" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="gateway_port" Nullable="false" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="actinact" Precision="1" Scale="0" Type="Decimal" />
+    <Property Name="created_time" Nullable="false" Precision="3" Type="DateTime" />
+    <Property Name="opeartion_type" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+    <NavigationProperty Name="RTLS_ZONEDTLS" Relationship="Self.RTLS_ZONEDTLS_GID_FK" FromRole="RTLS_GATEWAY" ToRole="RTLS_ZONEDTLS" />
+  </EntityType>
+  <EntityType Name="RTLS_LOGINS">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="SID" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" Type="Decimal" />
+    <Property Name="LOG_TYPE" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+    <Property Name="USER_ID" MaxLength="20" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="PASSWORD" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ACTINACT" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+  </EntityType>
+  <EntityType Name="RTLS_ONLINEPERSONSTATUS">
+    <Key>
+      <PropertyRef Name="PERSONID" />
+    </Key>
+    <Property Name="PERSONID" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="TAGID" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="Zone_ID" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="status" Precision="3" Scale="0" Type="Decimal" />
+    <Property Name="TAG_SIGNALSTRENGTH" Precision="14" Scale="10" Type="Decimal" />
+    <Property Name="BS_SIGNALSTRENGTH" Precision="14" Scale="10" Type="Decimal" />
+    <Property Name="INTIME" Precision="3" Type="DateTime" />
+    <Property Name="ALLISNOTWELLTIME" Precision="3" Type="DateTime" />
+    <Property Name="PANICTIME" Precision="3" Type="DateTime" />
+    <Property Name="NOMOTIONTIME" Precision="3" Type="DateTime" />
+    <Property Name="OUT_TIME" Precision="3" Type="DateTime" />
+    <Property Name="FOUT_TIME" Precision="3" Type="DateTime" />
+    <Property Name="TEMPEXCEEDTIME" Precision="3" Type="DateTime" />
+    <Property Name="LOW_BATTERY_TIME" Precision="3" Type="DateTime" />
+    <Property Name="LASTUPDATEDTIME" Precision="3" Type="DateTime" />
+    <Property Name="TAG_BATTERY_STATUS_VAL" Precision="14" Scale="10" Type="Decimal" />
+    <Property Name="TAG_BATTERY_STATUS_PERCNT" Precision="10" Scale="0" Type="Decimal" />
+    <Property Name="BS_BATTERY_STATUS_VAL" Precision="14" Scale="10" Type="Decimal" />
+    <Property Name="BS_BATTERY_STATUS_PERCNT" Precision="10" Scale="0" Type="Decimal" />
+    <Property Name="created_time" Nullable="false" Precision="3" Type="DateTime" />
+    <NavigationProperty Name="RTLS_PERSONDTLS" Relationship="Self.RTLS_ONLINEPERSONSTATUS_FK" FromRole="RTLS_ONLINEPERSONSTATUS" ToRole="RTLS_PERSONDTLS" />
+    <Property Name="TEMP_VALUE" Precision="14" Scale="10" Type="Decimal" />
+  </EntityType>
+  <EntityType Name="RTLS_PERSONDTLS">
+    <Key>
+      <PropertyRef Name="PERSON_ID" />
+    </Key>
+    <Property Name="PERSON_ID" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="TAG_ID" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="PERSONNAME" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="DEPARTMENT_id" Nullable="false" Precision="5" Scale="0" Type="Decimal" />
+    <Property Name="DESIGNATION_id" Nullable="false" Precision="5" Scale="0" Type="Decimal" />
+    <Property Name="MOBILE_NO" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="CREATED_TIME" Nullable="false" Precision="3" Type="DateTime" />
+    <Property Name="Assigned_time" Precision="3" Type="DateTime" />
+    <Property Name="Un_Assigned_time" Precision="3" Type="DateTime" />
+    <Property Name="ACTINACT" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+    <Property Name="OPERATION_TYPE" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+    <NavigationProperty Name="RTLS_DEPARTMENTS" Relationship="Self.RTLS_PERSONDTLS_DEPT_FK" FromRole="RTLS_PERSONDTLS" ToRole="RTLS_DEPARTMENTS" />
+    <NavigationProperty Name="RTLS_DESIGNATIONS" Relationship="Self.RTLS_PERSONDTLS_DESG_FK" FromRole="RTLS_PERSONDTLS" ToRole="RTLS_DESIGNATIONS" />
+    <NavigationProperty Name="RTLS_ONLINEPERSONSTATUS" Relationship="Self.RTLS_ONLINEPERSONSTATUS_FK" FromRole="RTLS_PERSONDTLS" ToRole="RTLS_ONLINEPERSONSTATUS" />
+    <NavigationProperty Name="RTLS_PERSONSTATUS" Relationship="Self.RTLS_PERSONSTATUS_fk" FromRole="RTLS_PERSONDTLS" ToRole="RTLS_PERSONSTATUS" />
+    <Property Name="Tagtransact_type" Nullable="false" Type="Int32" />
+  </EntityType>
+  <EntityType Name="RTLS_PERSONSIMEIDATA">
+    <Key>
+      <PropertyRef Name="IMEI" />
+    </Key>
+    <Property Name="IMEI" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="created_time" Nullable="false" Precision="3" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="RTLS_PERSONSTATUS">
+    <Key>
+      <PropertyRef Name="person_id" />
+    </Key>
+    <Property Name="person_id" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="tagid" Nullable="false" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="zone_id" Nullable="false" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="status" Nullable="false" Precision="10" Scale="0" Type="Decimal" />
+    <Property Name="stime" Nullable="false" Precision="3" Type="DateTime" />
+    <Property Name="created_time" Nullable="false" Precision="3" Type="DateTime" />
+    <NavigationProperty Name="RTLS_PERSONDTLS" Relationship="Self.RTLS_PERSONSTATUS_fk" FromRole="RTLS_PERSONSTATUS" ToRole="RTLS_PERSONDTLS" />
+  </EntityType>
+  <EntityType Name="RTLS_PERTRKFAULTINFO">
+    <Key>
+      <PropertyRef Name="FLTNO" />
+    </Key>
+    <Property Name="FLTNO" Nullable="false" Precision="10" Scale="0" Type="Decimal" />
+    <Property Name="fltname" MaxLength="100" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="FLTDESC" MaxLength="200" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="FLTLEVEL" MaxLength="2" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="CREATEDTIME" Precision="3" Type="DateTime" />
+    <Property Name="OPERATION_TYPE" Precision="1" Scale="0" Type="Decimal" />
+  </EntityType>
+  <EntityType Name="RTLS_RESCUE_TEAM_MEMBERS">
+    <Key>
+      <PropertyRef Name="member_id" />
+    </Key>
+    <Property Name="member_id" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="memeber_name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="mobile_no" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="alt_mobile_no" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="created_time" Nullable="false" Precision="3" Type="DateTime" />
+    <Property Name="actinact" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+    <Property Name="opeartion_type" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+  </EntityType>
+  <EntityType Name="RTLS_SMS_TRANSACTIONS">
+    <Key>
+      <PropertyRef Name="SMS_ID" />
+    </Key>
+    <Property Name="SMS_ID" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="person_id" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="tagid" Nullable="false" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="fltno" Nullable="false" Precision="5" Scale="0" Type="Decimal" />
+    <Property Name="username" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="sender_id" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="provider" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="REC_MOBILENO" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="MSG" MaxLength="300" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="sent_notsent" Precision="1" Scale="0" Type="Decimal" />
+    <Property Name="SENT_TIME" Precision="3" Type="DateTime" />
+    <Property Name="GeneratedTime" Precision="3" Type="DateTime" />
+    <Property Name="DELIVERY_STATUS" MaxLength="150" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="DELIVERED_TIME" Precision="3" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="RTLS_STATUSES">
+    <Key>
+      <PropertyRef Name="STATUS_NO" />
+    </Key>
+    <Property Name="STATUS_NO" Nullable="false" Precision="10" Scale="0" Type="Decimal" />
+    <Property Name="status_name" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="operation_type" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+    <Property Name="created_time" Nullable="false" Precision="3" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="RTLS_TAG_ZONE_CONFIG">
+    <Key>
+      <PropertyRef Name="tagid" />
+      <PropertyRef Name="zone_id" />
+    </Key>
+    <Property Name="tagid" Nullable="false" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="zone_id" Nullable="false" Precision="3" Scale="0" Type="Decimal" />
+    <Property Name="created_time" Nullable="false" Precision="3" Type="DateTime" />
+    <Property Name="opeartion_type" Precision="1" Scale="0" Type="Decimal" />
+    <NavigationProperty Name="RTLS_ZONEDTLS" Relationship="Self.RTLS_TAG_ZONE_CONFIG_fk" FromRole="RTLS_TAG_ZONE_CONFIG" ToRole="RTLS_ZONEDTLS" />
+  </EntityType>
+  <EntityType Name="RTLS_Zone_Category">
+    <Key>
+      <PropertyRef Name="ZCAT_NO" />
+    </Key>
+    <Property Name="ZCAT_NAME" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ZCAT_NO" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+    <Property Name="operation_type" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+    <Property Name="CREATEDTIME" Nullable="false" Precision="3" Type="DateTime" />
+    <NavigationProperty Name="RTLS_ZONEDTLS" Relationship="Self.RTLS_ZONEDTLS_safe_unsafe_FKs" FromRole="RTLS_Zone_Category" ToRole="RTLS_ZONEDTLS" />
+  </EntityType>
+  <EntityType Name="RTLS_ZONEDTLS">
+    <Key>
+      <PropertyRef Name="zone_id" />
+    </Key>
+    <Property Name="gid" Nullable="false" Precision="10" Scale="0" Type="Decimal" />
+    <Property Name="zone_id" Nullable="false" Precision="10" Scale="0" Type="Decimal" />
+    <Property Name="zone_name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="area" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="safe_unsafe" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+    <Property Name="BS_SIGNALSTRENGTH" Precision="14" Scale="10" Type="Decimal" />
+    <Property Name="BS_BATTERY_STATUS_VAL" Precision="14" Scale="10" Type="Decimal" />
+    <Property Name="BS_BATTERY_STATUS_PERCNT" Precision="10" Scale="0" Type="Decimal" />
+    <Property Name="POWERON" Precision="3" Type="DateTime" />
+    <Property Name="actinact" Precision="1" Scale="0" Type="Decimal" />
+    <Property Name="created_time" Nullable="false" Precision="3" Type="DateTime" />
+    <Property Name="oparation_type" Nullable="false" Precision="1" Scale="0" Type="Decimal" />
+    <NavigationProperty Name="RTLS_GATEWAY" Relationship="Self.RTLS_ZONEDTLS_GID_FK" FromRole="RTLS_ZONEDTLS" ToRole="RTLS_GATEWAY" />
+    <NavigationProperty Name="RTLS_TAG_ZONE_CONFIG" Relationship="Self.RTLS_TAG_ZONE_CONFIG_fk" FromRole="RTLS_ZONEDTLS" ToRole="RTLS_TAG_ZONE_CONFIG" />
+    <NavigationProperty Name="RTLS_Zone_Category" Relationship="Self.RTLS_ZONEDTLS_safe_unsafe_FKs" FromRole="RTLS_ZONEDTLS" ToRole="RTLS_Zone_Category" />
+  </EntityType>
+  <EntityType Name="RTLS_FAULT_DTLS">
+    <Key>
+      <PropertyRef Name="PERSON_ID" />
+      <PropertyRef Name="CREATED_TIME" />
+    </Key>
+    <Property Name="ZONE_ID" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="faultno" Precision="5" Scale="0" Type="Decimal" />
+    <Property Name="fltname" MaxLength="75" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="FLTINFO" MaxLength="255" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="PERSON_ID" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="TAG_ID" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="DLTIME" Precision="10" Scale="0" Type="Decimal" />
+    <Property Name="DLYEAR" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="ORC_DATETIME" Precision="3" Type="DateTime" />
+    <Property Name="CLEARED_TIME" Precision="10" Scale="0" Type="Decimal" />
+    <Property Name="CLEAREDYEAR" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="CLEARED_DATETIME" Precision="3" Type="DateTime" />
+    <Property Name="FAULTLEVEL" MaxLength="2" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="CREATED_TIME" Nullable="false" Precision="3" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="RTLS_PERSONSTATUS_HISTORY">
+    <Key>
+      <PropertyRef Name="person_id" />
+      <PropertyRef Name="tagid" />
+      <PropertyRef Name="zone_id" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="stime" />
+      <PropertyRef Name="created_time" />
+    </Key>
+    <Property Name="person_id" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="tagid" Nullable="false" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="zone_id" Nullable="false" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="status" Nullable="false" Precision="10" Scale="0" Type="Decimal" />
+    <Property Name="stime" Nullable="false" Precision="3" Type="DateTime" />
+    <Property Name="created_time" Nullable="false" Precision="3" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="RTLS_PERTRK_CONFIG">
+    <Key>
+      <PropertyRef Name="ALM_WTTIME" />
+      <PropertyRef Name="ALLWELL_WTTME" />
+      <PropertyRef Name="alm_sent_cnt" />
+      <PropertyRef Name="OUT_allowedtime" />
+      <PropertyRef Name="inactallowedtime" />
+      <PropertyRef Name="TEMPMIN" />
+      <PropertyRef Name="TEMPMAX" />
+      <PropertyRef Name="LOW_BATTERY_PERCENT" />
+      <PropertyRef Name="MaxTAGIDNum" />
+      <PropertyRef Name="MaxBSIDNum" />
+      <PropertyRef Name="created_time" />
+    </Key>
+    <Property Name="ALM_WTTIME" Nullable="false" Precision="2" Scale="0" Type="Decimal" />
+    <Property Name="ALLWELL_WTTME" Nullable="false" Precision="3" Scale="0" Type="Decimal" />
+    <Property Name="alm_sent_cnt" Nullable="false" Precision="2" Scale="0" Type="Decimal" />
+    <Property Name="OUT_allowedtime" Nullable="false" Precision="2" Scale="0" Type="Decimal" />
+    <Property Name="inactallowedtime" Nullable="false" Precision="2" Scale="0" Type="Decimal" />
+    <Property Name="TEMPMIN" Nullable="false" Precision="2" Scale="0" Type="Decimal" />
+    <Property Name="TEMPMAX" Nullable="false" Precision="2" Scale="0" Type="Decimal" />
+    <Property Name="LOW_BATTERY_PERCENT" Nullable="false" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="MaxTAGIDNum" Nullable="false" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="MaxBSIDNum" Nullable="false" Precision="4" Scale="0" Type="Decimal" />
+    <Property Name="created_time" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" Type="Binary" />
+  </EntityType>
+  <EntityType Name="RTLS_SYNC_DTLS">
+    <Key>
+      <PropertyRef Name="last_sync_time" />
+    </Key>
+    <Property Name="last_sync_time" Nullable="false" Precision="3" Type="DateTime" />
+  </EntityType>
+  <Association Name="RTLS_PERSONDTLS_DEPT_FK">
+    <End Type="Self.RTLS_DEPARTMENTS" Multiplicity="1" Role="RTLS_DEPARTMENTS" />
+    <End Type="Self.RTLS_PERSONDTLS" Multiplicity="*" Role="RTLS_PERSONDTLS" />
+    <ReferentialConstraint>
+      <Principal Role="RTLS_DEPARTMENTS">
+        <PropertyRef Name="dept_id" />
+      </Principal>
+      <Dependent Role="RTLS_PERSONDTLS">
+        <PropertyRef Name="DEPARTMENT_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RTLS_PERSONDTLS_DESG_FK">
+    <End Type="Self.RTLS_DESIGNATIONS" Multiplicity="1" Role="RTLS_DESIGNATIONS" />
+    <End Type="Self.RTLS_PERSONDTLS" Multiplicity="*" Role="RTLS_PERSONDTLS" />
+    <ReferentialConstraint>
+      <Principal Role="RTLS_DESIGNATIONS">
+        <PropertyRef Name="desg_id" />
+      </Principal>
+      <Dependent Role="RTLS_PERSONDTLS">
+        <PropertyRef Name="DESIGNATION_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RTLS_ZONEDTLS_GID_FK">
+    <End Type="Self.RTLS_GATEWAY" Multiplicity="1" Role="RTLS_GATEWAY" />
+    <End Type="Self.RTLS_ZONEDTLS" Multiplicity="*" Role="RTLS_ZONEDTLS" />
+    <ReferentialConstraint>
+      <Principal Role="RTLS_GATEWAY">
+        <PropertyRef Name="gid" />
+      </Principal>
+      <Dependent Role="RTLS_ZONEDTLS">
+        <PropertyRef Name="gid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RTLS_ONLINEPERSONSTATUS_FK">
+    <End Type="Self.RTLS_PERSONDTLS" Multiplicity="1" Role="RTLS_PERSONDTLS" />
+    <End Type="Self.RTLS_ONLINEPERSONSTATUS" Multiplicity="0..1" Role="RTLS_ONLINEPERSONSTATUS" />
+    <ReferentialConstraint>
+      <Principal Role="RTLS_PERSONDTLS">
+        <PropertyRef Name="PERSON_ID" />
+      </Principal>
+      <Dependent Role="RTLS_ONLINEPERSONSTATUS">
+        <PropertyRef Name="PERSONID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RTLS_PERSONSTATUS_fk">
+    <End Type="Self.RTLS_PERSONDTLS" Multiplicity="1" Role="RTLS_PERSONDTLS" />
+    <End Type="Self.RTLS_PERSONSTATUS" Multiplicity="0..1" Role="RTLS_PERSONSTATUS" />
+    <ReferentialConstraint>
+      <Principal Role="RTLS_PERSONDTLS">
+        <PropertyRef Name="PERSON_ID" />
+      </Principal>
+      <Dependent Role="RTLS_PERSONSTATUS">
+        <PropertyRef Name="person_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RTLS_TAG_ZONE_CONFIG_fk">
+    <End Type="Self.RTLS_ZONEDTLS" Multiplicity="1" Role="RTLS_ZONEDTLS" />
+    <End Type="Self.RTLS_TAG_ZONE_CONFIG" Multiplicity="*" Role="RTLS_TAG_ZONE_CONFIG" />
+    <ReferentialConstraint>
+      <Principal Role="RTLS_ZONEDTLS">
+        <PropertyRef Name="zone_id" />
+      </Principal>
+      <Dependent Role="RTLS_TAG_ZONE_CONFIG">
+        <PropertyRef Name="zone_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RTLS_ZONEDTLS_safe_unsafe_FKs">
+    <End Type="Self.RTLS_Zone_Category" Multiplicity="1" Role="RTLS_Zone_Category" />
+    <End Type="Self.RTLS_ZONEDTLS" Multiplicity="*" Role="RTLS_ZONEDTLS" />
+    <ReferentialConstraint>
+      <Principal Role="RTLS_Zone_Category">
+        <PropertyRef Name="ZCAT_NO" />
+      </Principal>
+      <Dependent Role="RTLS_ZONEDTLS">
+        <PropertyRef Name="safe_unsafe" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="tata_rakshak" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cloud_persons_images" EntityType="Self.Cloud_persons_images" />
+    <EntitySet Name="RTLS_DEPARTMENTS" EntityType="Self.RTLS_DEPARTMENTS" />
+    <EntitySet Name="RTLS_DESIGNATIONS" EntityType="Self.RTLS_DESIGNATIONS" />
+    <EntitySet Name="RTLS_GATEWAY" EntityType="Self.RTLS_GATEWAY" />
+    <EntitySet Name="RTLS_LOGINS" EntityType="Self.RTLS_LOGINS" />
+    <EntitySet Name="RTLS_ONLINEPERSONSTATUS" EntityType="Self.RTLS_ONLINEPERSONSTATUS" />
+    <EntitySet Name="RTLS_PERSONDTLS" EntityType="Self.RTLS_PERSONDTLS" />
+    <EntitySet Name="RTLS_PERSONSIMEIDATA" EntityType="Self.RTLS_PERSONSIMEIDATA" />
+    <EntitySet Name="RTLS_PERSONSTATUS" EntityType="Self.RTLS_PERSONSTATUS" />
+    <EntitySet Name="RTLS_PERTRKFAULTINFO" EntityType="Self.RTLS_PERTRKFAULTINFO" />
+    <EntitySet Name="RTLS_RESCUE_TEAM_MEMBERS" EntityType="Self.RTLS_RESCUE_TEAM_MEMBERS" />
+    <EntitySet Name="RTLS_SMS_TRANSACTIONS" EntityType="Self.RTLS_SMS_TRANSACTIONS" />
+    <EntitySet Name="RTLS_STATUSES" EntityType="Self.RTLS_STATUSES" />
+    <EntitySet Name="RTLS_TAG_ZONE_CONFIG" EntityType="Self.RTLS_TAG_ZONE_CONFIG" />
+    <EntitySet Name="RTLS_Zone_Category" EntityType="Self.RTLS_Zone_Category" />
+    <EntitySet Name="RTLS_ZONEDTLS" EntityType="Self.RTLS_ZONEDTLS" />
+    <EntitySet Name="RTLS_FAULT_DTLS" EntityType="Self.RTLS_FAULT_DTLS" />
+    <EntitySet Name="RTLS_PERSONSTATUS_HISTORY" EntityType="Self.RTLS_PERSONSTATUS_HISTORY" />
+    <EntitySet Name="RTLS_PERTRK_CONFIG" EntityType="Self.RTLS_PERTRK_CONFIG" />
+    <EntitySet Name="RTLS_SYNC_DTLS" EntityType="Self.RTLS_SYNC_DTLS" />
+    <AssociationSet Name="RTLS_PERSONDTLS_DEPT_FK" Association="Self.RTLS_PERSONDTLS_DEPT_FK">
+      <End EntitySet="RTLS_DEPARTMENTS" Role="RTLS_DEPARTMENTS" />
+      <End EntitySet="RTLS_PERSONDTLS" Role="RTLS_PERSONDTLS" />
+    </AssociationSet>
+    <AssociationSet Name="RTLS_PERSONDTLS_DESG_FK" Association="Self.RTLS_PERSONDTLS_DESG_FK">
+      <End EntitySet="RTLS_DESIGNATIONS" Role="RTLS_DESIGNATIONS" />
+      <End EntitySet="RTLS_PERSONDTLS" Role="RTLS_PERSONDTLS" />
+    </AssociationSet>
+    <AssociationSet Name="RTLS_ZONEDTLS_GID_FK" Association="Self.RTLS_ZONEDTLS_GID_FK">
+      <End EntitySet="RTLS_GATEWAY" Role="RTLS_GATEWAY" />
+      <End EntitySet="RTLS_ZONEDTLS" Role="RTLS_ZONEDTLS" />
+    </AssociationSet>
+    <AssociationSet Name="RTLS_ONLINEPERSONSTATUS_FK" Association="Self.RTLS_ONLINEPERSONSTATUS_FK">
+      <End EntitySet="RTLS_PERSONDTLS" Role="RTLS_PERSONDTLS" />
+      <End EntitySet="RTLS_ONLINEPERSONSTATUS" Role="RTLS_ONLINEPERSONSTATUS" />
+    </AssociationSet>
+    <AssociationSet Name="RTLS_PERSONSTATUS_fk" Association="Self.RTLS_PERSONSTATUS_fk">
+      <End EntitySet="RTLS_PERSONDTLS" Role="RTLS_PERSONDTLS" />
+      <End EntitySet="RTLS_PERSONSTATUS" Role="RTLS_PERSONSTATUS" />
+    </AssociationSet>
+    <AssociationSet Name="RTLS_TAG_ZONE_CONFIG_fk" Association="Self.RTLS_TAG_ZONE_CONFIG_fk">
+      <End EntitySet="RTLS_ZONEDTLS" Role="RTLS_ZONEDTLS" />
+      <End EntitySet="RTLS_TAG_ZONE_CONFIG" Role="RTLS_TAG_ZONE_CONFIG" />
+    </AssociationSet>
+    <AssociationSet Name="RTLS_ZONEDTLS_safe_unsafe_FKs" Association="Self.RTLS_ZONEDTLS_safe_unsafe_FKs">
+      <End EntitySet="RTLS_Zone_Category" Role="RTLS_Zone_Category" />
+      <End EntitySet="RTLS_ZONEDTLS" Role="RTLS_ZONEDTLS" />
+    </AssociationSet>
+    <EntitySet Name="RTLS_SpotLevelMap" EntityType="tata_rakshak_dbModel.RTLS_SpotLevelMap" />
+  </EntityContainer>
+  <EntityType Name="RTLS_SpotLevelMap">
+    <Key>
+      <PropertyRef Name="zone_id" />
+      <PropertyRef Name="Level_no" />
+    </Key>
+    <Property Name="zone_id" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="Level_no" Type="Decimal" Nullable="false" Precision="3" Scale="0" />
+  </EntityType>
+</Schema>

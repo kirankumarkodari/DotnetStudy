@@ -1,0 +1,20 @@
+
+-> Entity framework best tutorial 
+http://www.entityframeworktutorial.net/Types-of-Entities.aspx
+
+
+-> Creating Entity Data Model(EDM) from existed database( database-first approach ) 
+http://www.entityframeworktutorial.net/entityframework6/create-entity-data-model.aspx
+
+
+-> What is the difference between POCO and DTO ? 
+https://stackoverflow.com/questions/725348/plain-old-clr-object-vs-data-transfer-object
+
+
+-> LINQ Tutorial
+http://www.tutorialsteacher.com/linq/what-is-linq
+
+
+-> Different database relationship types ( one to one, one to many, many to many, many to one )
+https://www.techrepublic.com/article/relational-databases-defining-relationships-between-database-tables/
+http://etutorials.org/SQL/Database+design+for+mere+mortals/Part+II+The+Design+Process/Chapter+10.+Table+Relationships/Types+of+Relationships/(best one)

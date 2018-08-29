@@ -1,0 +1,8 @@
+When & How to Use OOPS paradigm
+https://www.c-sharpcorner.com/forums/why-we-need-oops-in-programming-language
+Why we need OOPS in programming language
+https://www.quora.com/Why-we-need-OOPs-in-Programming-language
+How to Organize the Code In Proper way ?
+https://softwareengineering.stackexchange.com/questions/40394/how-do-you-organize-your-projects
+Best practices for Coding 
+https://www.codeproject.com/Articles/539179/Some-practices-to-write-better-Csharp-NET-code

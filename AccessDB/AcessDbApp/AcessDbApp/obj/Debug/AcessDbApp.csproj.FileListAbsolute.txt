@@ -1,0 +1,1 @@
+D:\Study\Dotnet\AccessDB\AcessDbApp\AcessDbApp\bin\Debug\AcessDbApp.exe.config

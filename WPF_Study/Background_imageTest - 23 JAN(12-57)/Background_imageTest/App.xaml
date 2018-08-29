@@ -1,0 +1,13 @@
+﻿<Application x:Class="Background_imageTest.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Background_imageTest"
+             StartupUri="MainWindow.xaml"
+             >
+    <Application.Resources>
+        <Style x:Key="Text_placeHolder" TargetType="{x:Type TextBox}">
+            <Setter Property="BorderBrush" Value="Azure"/>
+            
+        </Style>
+    </Application.Resources>
+</Application>

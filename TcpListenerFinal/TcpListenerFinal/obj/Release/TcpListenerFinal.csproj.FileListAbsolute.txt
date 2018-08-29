@@ -1,0 +1,8 @@
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\bin\Release\TcpListenerFinal.exe.config
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\bin\Release\TcpListenerFinal.exe
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\bin\Release\TcpListenerFinal.pdb
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\obj\Release\TcpListenerFinal.Form1.resources
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\obj\Release\TcpListenerFinal.Properties.Resources.resources
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\obj\Release\TcpListenerFinal.csproj.GenerateResource.Cache
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\obj\Release\TcpListenerFinal.exe
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\obj\Release\TcpListenerFinal.pdb

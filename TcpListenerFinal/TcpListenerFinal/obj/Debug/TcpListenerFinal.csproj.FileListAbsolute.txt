@@ -1,0 +1,13 @@
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\bin\Debug\TcpListenerFinal.exe.config
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\bin\Debug\TcpListenerFinal.exe
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\bin\Debug\TcpListenerFinal.pdb
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\obj\Debug\TcpListenerFinal.csprojResolveAssemblyReference.cache
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\obj\Debug\TcpListenerFinal.Form1.resources
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\obj\Debug\TcpListenerFinal.Properties.Resources.resources
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\obj\Debug\TcpListenerFinal.csproj.GenerateResource.Cache
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\obj\Debug\TcpListenerFinal.exe
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\obj\Debug\TcpListenerFinal.pdb
+D:\vs projects\TcpListenerFinal\TcpListenerFinal\obj\Debug\TcpListenerFinal.Form2.resources
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\TcpListenerFinal\TcpListenerFinal\bin\Debug\TcpListenerFinal.exe.config
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\TcpListenerFinal\TcpListenerFinal\obj\Debug\TcpListenerFinal.exe
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\TcpListenerFinal\TcpListenerFinal\obj\Debug\TcpListenerFinal.pdb

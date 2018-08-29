@@ -1,0 +1,9 @@
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\Aync_await\Aync_await\bin\Debug\Aync_await.exe.config
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\Aync_await\Aync_await\bin\Debug\Aync_await.exe
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\Aync_await\Aync_await\bin\Debug\Aync_await.pdb
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\Aync_await\Aync_await\obj\Debug\Aync_await.csprojResolveAssemblyReference.cache
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\Aync_await\Aync_await\obj\Debug\Aync_await.exe
+D:\Projects\AAC\Testings_Automation\2_PreReq_Analysis\Aync_await\Aync_await\obj\Debug\Aync_await.pdb
+D:\Study\Dotnet\Aync_await\Aync_await\bin\Debug\Aync_await.exe.config
+D:\Study\Dotnet\Aync_await\Aync_await\obj\Debug\Aync_await.exe
+D:\Study\Dotnet\Aync_await\Aync_await\obj\Debug\Aync_await.pdb

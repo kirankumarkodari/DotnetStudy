@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="rtlsdbModelStoreContainer" CdmEntityContainer="rtlsdbEntities">
+    <EntitySetMapping Name="RTLS_ZONEDTLS">
+      <EntityTypeMapping TypeName="rtlsdbModel.RTLS_ZONEDTLS">
+        <MappingFragment StoreEntitySet="RTLS_ZONEDTLS">
+          <ScalarProperty Name="ZONE_ID" ColumnName="ZONE_ID" />
+          <ScalarProperty Name="ZONE_NAME" ColumnName="ZONE_NAME" />
+          <ScalarProperty Name="AREA" ColumnName="AREA" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="SAFE_UNSAFE" ColumnName="SAFE_UNSAFE" />
+          <ScalarProperty Name="CREATEDTIME" ColumnName="CREATEDTIME" />
+          <ScalarProperty Name="OPERATION_TYPE" ColumnName="OPERATION_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

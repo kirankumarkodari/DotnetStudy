@@ -1,0 +1,6 @@
+D:\Study\Dotnet\Learning_Excersizes\First_console_app\First_console_app\bin\Debug\First_console_app.exe.config
+D:\Study\Dotnet\Learning_Excersizes\First_console_app\First_console_app\bin\Debug\First_console_app.exe
+D:\Study\Dotnet\Learning_Excersizes\First_console_app\First_console_app\bin\Debug\First_console_app.pdb
+D:\Study\Dotnet\Learning_Excersizes\First_console_app\First_console_app\obj\Debug\First_console_app.csprojResolveAssemblyReference.cache
+D:\Study\Dotnet\Learning_Excersizes\First_console_app\First_console_app\obj\Debug\First_console_app.exe
+D:\Study\Dotnet\Learning_Excersizes\First_console_app\First_console_app\obj\Debug\First_console_app.pdb

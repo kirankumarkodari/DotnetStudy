@@ -1,0 +1,60 @@
+1) To Maintain Server class .. (TcpServer) in Windows forms application.
+
+https://stackoverflow.com/questions/10438281/c-sharp-socket-server-with-windows-form-application
+
+
+2) How does port woks & connection , Connection less protocols.
+https://stackoverflow.com/questions/3329641/how-do-multiple-clients-connect-simultaneously-to-one-port-say-80-on-a-server
+
+3)About Serialization 
+https://stackoverflow.com/questions/5877808/what-is-serializable-and-when-should-i-use-it
+https://stackoverflow.com/questions/3429921/what-does-serializable-mean
+
+4) Static Members/ Garbage Collection 
+https://stackoverflow.com/questions/38612009/where-are-all-the-static-members-stored
+  Setting Object to null 
+https://stackoverflow.com/questions/2785/setting-objects-to-null-nothing-after-use-in-net
+
+   Releasing Static Variables Memory in c# 
+https://www.codeproject.com/Questions/226136/how-to-release-static-variable-memory
+   
+   Usage Of Static keyword in c# 
+https://www.codeproject.com/Articles/891433/Must-Remember-Key-Concepts-to-Keyword-Static
+
+   Static Method
+http://theburningmonk.com/2010/07/static-vs-non-static-method-in-csharp/
+
+
+5) Async and Await 
+https://stackoverflow.com/questions/14455293/how-and-when-to-use-async-and-await
+:|- Vedio Stuff about Aync and Await 
+https://www.youtube.com/watch?v=2moh18sh5p4
+
+ Good explanation about Async and Multi threading 
+https://stackoverflow.com/questions/34680985/what-is-the-difference-between-asynchronous-programming-and-multithreading
+
+ Good explanation about Async and Sync programming
+https://stackoverflow.com/questions/27742698/difference-between-asynchronous-and-synchronous-in-net-4-5
+
+6) Why .NET applications are taking more Memory(RAM) ?? 
+https://stackoverflow.com/questions/1343374/reducing-memory-usage-of-net-applications
+https://stackoverflow.com/questions/223283/net-exe-memory-footprint
+
+7) What is difference b/w Value type and Reference type ?? 
+http://net-informations.com/faq/general/valuetype-referencetype.htm
+
+8) What is Thread pool in c# ?
+http://www.dotnetforall.com/working-with-thread-pool-csharp/
+
+9) What is DLL & how compatible it is with other programming languages ?
+https://stackoverflow.com/questions/3921541/programming-language-for-creating-dll-c-or-c-sharp
+
+10) Coding Standards in C# ?
+http://www.dofactory.com/reference/csharp-coding-standards
+
+Some crazy questions about c#........
+http://www.dotnetstudy.com/string-vs-system-string-in-csharp?id=34
+
+
+
+

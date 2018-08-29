@@ -1,0 +1,8 @@
+1) https://www.codeproject.com/Articles/1068043/Creating-Custom-Windows-Forms-in-Csharp-using-Pane
+2) WPF Sample App
+https://www.youtube.com/watch?v=aT2o1F-YCEU
+3) WPF Gridpanel
+http://www.c-sharpcorner.com/UploadFile/mahesh/grid-in-wpf/
+https://www.youtube.com/watch?v=denx2GJSyy8
+4) WPF Textbox
+https://stackoverflow.com/questions/16851001/wpf-change-thickness-left-border-textbox

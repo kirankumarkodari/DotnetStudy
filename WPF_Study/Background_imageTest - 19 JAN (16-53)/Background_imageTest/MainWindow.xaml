@@ -1,0 +1,44 @@
+﻿<Window x:Class="Background_imageTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Background_imageTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        WindowStyle="SingleBorderWindow"
+        AllowsTransparency="False"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition />
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+           
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" x:Name="label" Content="A A C" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top" RenderTransformOrigin="0.977,-2.171" FontSize="48" Foreground="White" FontWeight="Bold" />
+        <StackPanel Grid.Row="1" VerticalAlignment="Center">
+        <StackPanel Margin="8" Grid.Row="1" Height="auto" HorizontalAlignment="Center" Orientation="Horizontal">
+                <Label  x:Name="Ip_label" Content="PrivateIP:"  RenderTransformOrigin="0.977,-2.171" FontSize="20" Foreground="white" FontWeight="Bold" Height="32" />
+                <TextBox Name="ip_textBox"  CaretBrush="Beige"  Margin="10 0 0 0"  Background="Transparent" BorderThickness="0 0 0 4"  BorderBrush="Aqua" Tag="PrivateIP" FontSize="22"  Height="32"  TextWrapping="Wrap"   Width="200" Foreground="white"  />
+        </StackPanel>
+        <StackPanel Margin="8" Grid.Row="1" Height="auto" HorizontalAlignment="Center" Orientation="Horizontal">
+                <Label  x:Name="port_label" Content="Port  :"  RenderTransformOrigin="0.977,-2.171" FontSize="20" Foreground="white" FontWeight="Bold" Height="32" />
+                <TextBox Name="port_textBox" MaxLength="5" PreviewTextInput="NumberValidationTextBox" CaretBrush="Beige"  Background="Transparent" BorderThickness="0 0 0 4" Margin="40 0 0 0" BorderBrush="Aqua" Tag="PrivateIP" FontSize="22"  Height="32"  TextWrapping="Wrap"   Width="200" Foreground="white"  />
+        </StackPanel>
+            <Button Name="Button_connect" Height="Auto" Width="150" Margin="80 40 20 20" Background="Transparent" BorderThickness="3" Content="Connect" FontSize="22" FontWeight="Bold" Foreground="#E91E63"  BorderBrush="AliceBlue" Click="Button_Click" MouseEnter="Mouse_entered" MouseLeave="Mouse_left"/>
+
+          
+        </StackPanel>
+    </Grid>
+    <Window.Resources>
+
+    </Window.Resources>
+    <Window.Background>
+        <ImageBrush ImageSource="Images/bg2.jpg">
+        </ImageBrush>
+    </Window.Background>
+</Window>

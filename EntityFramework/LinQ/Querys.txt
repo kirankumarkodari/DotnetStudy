@@ -1,0 +1,28 @@
+-> Where statement
+from zone in RTLS_ZONEDTLS where zone.Zone_id>=1 select zone
+
+
+
+-> Orderby statement
+from zone in RTLS_ZONEDTLS where zone.Zone_id>=1 orderby zone.Zone_id  descending  select zone
+
+
+-> Group by statement
+from person in RTLS_PERSONSTATUS_HISTORies where person.Person_id=="P11" orderby person.Zone_id  ascending  group person by person.Zone_id
+
+
+-> Joining two tables in Linqpad 
+from person in RTLS_PERSONSTATUS_HISTORies join zone in RTLS_ZONEDTLS on person.Zone_id equals zone.Zone_id where person.Person_id=="P11" select new { PersonID = person.Person_id, ZoneID = zone.Zone_id } 
+
+
+-> Group Join:
+
+from Zones in RTLS_ZONEDTLS join personh in RTLS_PERSONSTATUS_HISTORies  on Zones.Zone_id equals personh.Zone_id into Validpersonsgrp select new { Group =Validpersonsgrp , ZoneID = Zones.Zone_name}
+
+
+-> Select statement
+from personsts in RTLS_ONLINEPERSONSTATUSes select new { PersonId= personsts.PERSONID, Status= personsts.Status }
+
+-> Count operator:
+(from personsts in RTLS_ONLINEPERSONSTATUSes where personsts.Status==3 select new { PersonId= personsts.PERSONID, Status= personsts.Status }).Count()
+

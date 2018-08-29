@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="rtlsdb.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="RTLS_DEPARTMENTS">
+    <Key>
+      <PropertyRef Name="dept_id" />
+    </Key>
+    <Property Name="dept_id" Type="numeric" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="dept_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="actinact" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="created_time" Type="datetime" Nullable="false" />
+    <Property Name="opeartion_type" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RTLS_DESIGNATIONS">
+    <Key>
+      <PropertyRef Name="desg_id" />
+    </Key>
+    <Property Name="desg_id" Type="numeric" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="desg_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="actinact" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="created_time" Type="datetime" Nullable="false" />
+    <Property Name="opeartion_type" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'rtlsdb.dbo.RTLS_FAULT_DTLS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="RTLS_FAULT_DTLS">
+    <Key>
+      <PropertyRef Name="PERSON_ID" />
+      <PropertyRef Name="CREATED_TIME" />
+    </Key>
+    <Property Name="ZONE_ID" Type="numeric" Precision="4" Scale="0" />
+    <Property Name="faultno" Type="numeric" Precision="5" Scale="0" />
+    <Property Name="fltname" Type="varchar" MaxLength="75" />
+    <Property Name="FLTINFO" Type="varchar" MaxLength="255" />
+    <Property Name="PERSON_ID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="TAG_ID" Type="numeric" Precision="4" Scale="0" />
+    <Property Name="DLTIME" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="DLYEAR" Type="numeric" Precision="4" Scale="0" />
+    <Property Name="ORC_DATETIME" Type="datetime" />
+    <Property Name="CLEARED_TIME" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="CLEAREDYEAR" Type="numeric" Precision="4" Scale="0" />
+    <Property Name="CLEARED_DATETIME" Type="datetime" />
+    <Property Name="FAULTLEVEL" Type="varchar" MaxLength="2" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RTLS_GATEWAY">
+    <Key>
+      <PropertyRef Name="gid" />
+    </Key>
+    <Property Name="gid" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="gateway_name" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="gateway_ip" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="gateway_port" Type="numeric" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="actinact" Type="numeric" Precision="1" Scale="0" />
+    <Property Name="created_time" Type="datetime" Nullable="false" />
+    <Property Name="opeartion_type" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RTLS_LOGINS">
+    <Key>
+      <PropertyRef Name="SID" />
+    </Key>
+    <Property Name="SID" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LOG_TYPE" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="USER_ID" Type="varchar" MaxLength="20" />
+    <Property Name="PASSWORD" Type="varchar" MaxLength="30" />
+    <Property Name="ACTINACT" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'rtlsdb.dbo.RTLS_ONLINEPERSONSTATUS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="RTLS_ONLINEPERSONSTATUS">
+    <Key>
+      <PropertyRef Name="created_time" />
+    </Key>
+    <Property Name="PERSONID" Type="varchar" MaxLength="15" />
+    <Property Name="TAGID" Type="numeric" Precision="4" Scale="0" />
+    <Property Name="Zone_ID" Type="numeric" Precision="4" Scale="0" />
+    <Property Name="status" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="TAG_SIGNALSTRENGTH" Type="numeric" Precision="14" Scale="10" />
+    <Property Name="BS_SIGNALSTRENGTH" Type="numeric" Precision="14" Scale="10" />
+    <Property Name="INTIME" Type="datetime" />
+    <Property Name="ALLISNOTWELLTIME" Type="datetime" />
+    <Property Name="PANICTIME" Type="datetime" />
+    <Property Name="NOMOTIONTIME" Type="datetime" />
+    <Property Name="OUT_TIME" Type="datetime" />
+    <Property Name="FOUT_TIME" Type="datetime" />
+    <Property Name="TEMPEXCEEDTIME" Type="datetime" />
+    <Property Name="LOW_BATTERY_TIME" Type="datetime" />
+    <Property Name="LASTUPDATEDTIME" Type="datetime" />
+    <Property Name="TAG_BATTERY_STATUS_VAL" Type="numeric" Precision="14" Scale="10" />
+    <Property Name="TAG_BATTERY_STATUS_PERCNT" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="BS_BATTERY_STATUS_VAL" Type="numeric" Precision="14" Scale="10" />
+    <Property Name="BS_BATTERY_STATUS_PERCNT" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="created_time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RTLS_PERSONDTLS">
+    <Key>
+      <PropertyRef Name="PERSON_ID" />
+    </Key>
+    <Property Name="PERSON_ID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="TAG_ID" Type="numeric" Precision="4" Scale="0" />
+    <Property Name="PERSONNAME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DEPARTMENT_id" Type="numeric" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="DESIGNATION_id" Type="numeric" Precision="5" Scale="0" Nullable="false" />
+    <Property Name="MOBILE_NO" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="CREATED_TIME" Type="datetime" Nullable="false" />
+    <Property Name="Assigned_time" Type="datetime" />
+    <Property Name="Un_Assigned_time" Type="datetime" />
+    <Property Name="ACTINACT" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="OPERATION_TYPE" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RTLS_PERSONSIMEIDATA">
+    <Key>
+      <PropertyRef Name="IMEI" />
+    </Key>
+    <Property Name="IMEI" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="created_time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'rtlsdb.dbo.RTLS_PERSONSTATUS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="RTLS_PERSONSTATUS">
+    <Key>
+      <PropertyRef Name="person_id" />
+      <PropertyRef Name="tagid" />
+      <PropertyRef Name="zone_id" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="stime" />
+      <PropertyRef Name="created_time" />
+    </Key>
+    <Property Name="person_id" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="tagid" Type="numeric" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="zone_id" Type="numeric" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="status" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="stime" Type="datetime" Nullable="false" />
+    <Property Name="created_time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'rtlsdb.dbo.RTLS_PERSONSTATUS_HISTORY' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="RTLS_PERSONSTATUS_HISTORY">
+    <Key>
+      <PropertyRef Name="person_id" />
+      <PropertyRef Name="tagid" />
+      <PropertyRef Name="zone_id" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="stime" />
+      <PropertyRef Name="created_time" />
+    </Key>
+    <Property Name="person_id" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="tagid" Type="numeric" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="zone_id" Type="numeric" Precision="4" Scale="0" Nullable="false" />
+    <Property Name="status" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="stime" Type="datetime" Nullable="false" />
+    <Property Name="created_time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RTLS_PERTRKFAULTINFO">
+    <Key>
+      <PropertyRef Name="FLTNO" />
+    </Key>
+    <Property Name="FLTNO" Type="int" Nullable="false" />
+    <Property Name="FLTNAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FLTDESC" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="FLTLEVEL" Type="varchar" MaxLength="2" Nullable="false" />
+    <Property Name="CREATEDTIME" Type="datetime" Nullable="false" />
+    <Property Name="OPERATION_TYPE" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RTLS_SMS_TRANSACTIONS">
+    <Key>
+      <PropertyRef Name="SMS_ID" />
+    </Key>
+    <Property Name="SMS_ID" Type="int" Nullable="false" />
+    <Property Name="PEROSN_ID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="TAGID" Type="int" Nullable="false" />
+    <Property Name="FLTNO" Type="int" Nullable="false" />
+    <Property Name="USERNAME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="SENDER_ID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="PROVIDER" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="REC_MOBILENO" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="TEAM_ID" Type="int" Nullable="false" />
+    <Property Name="MSG" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="SENT_NOTSENT" Type="int" Nullable="false" />
+    <Property Name="SENT_TIME" Type="datetime" Nullable="false" />
+    <Property Name="IS_DELIVERED" Type="int" Nullable="false" />
+    <Property Name="DELIVERED_TIME" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RTLS_STATUSES">
+    <Key>
+      <PropertyRef Name="STATUS_NO" />
+    </Key>
+    <Property Name="STATUS_NO" Type="int" Nullable="false" />
+    <Property Name="STATUSNAME" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="OPERATION_TYPE" Type="int" Nullable="false" />
+    <Property Name="CREATEDTIME" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'rtlsdb.dbo.RTLS_SYNC_DTLS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="RTLS_SYNC_DTLS">
+    <Key>
+      <PropertyRef Name="last_sync_time" />
+    </Key>
+    <Property Name="last_sync_time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'rtlsdb.dbo.RTLS_TAG_ZONE_CONFIG' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="RTLS_TAG_ZONE_CONFIG">
+    <Key>
+      <PropertyRef Name="TAGID" />
+      <PropertyRef Name="ZONE_ID" />
+      <PropertyRef Name="CREATEDTIME" />
+      <PropertyRef Name="OPERATION_TYPE" />
+      <PropertyRef Name="PERSONDTLS_PERSON_ID" />
+    </Key>
+    <Property Name="TAGID" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="ZONE_ID" Type="int" Nullable="false" />
+    <Property Name="CREATEDTIME" Type="datetime" Nullable="false" />
+    <Property Name="OPERATION_TYPE" Type="int" Nullable="false" />
+    <Property Name="PERSONDTLS_PERSON_ID" Type="nvarchar" MaxLength="15" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RTLS_Zone_Category">
+    <Key>
+      <PropertyRef Name="ZCAT_NO" />
+    </Key>
+    <Property Name="ZCAT_NAME" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="ZCAT_NO" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="operation_type" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="CREATEDTIME" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RTLS_ZONEDTLS">
+    <Key>
+      <PropertyRef Name="zone_id" />
+    </Key>
+    <Property Name="gid" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="zone_id" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="zone_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="area" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="safe_unsafe" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+    <Property Name="BS_SIGNALSTRENGTH" Type="numeric" Precision="14" Scale="10" />
+    <Property Name="BS_BATTERY_STATUS_VAL" Type="numeric" Precision="14" Scale="10" />
+    <Property Name="BS_BATTERY_STATUS_PERCNT" Type="numeric" Precision="10" Scale="0" />
+    <Property Name="POWERON" Type="datetime" />
+    <Property Name="actinact" Type="numeric" Precision="1" Scale="0" />
+    <Property Name="created_time" Type="datetime" Nullable="false" />
+    <Property Name="oparation_type" Type="numeric" Precision="1" Scale="0" Nullable="false" />
+  </EntityType>
+  <Association Name="RTLS_PERSONDTLS_DEPT_FK">
+    <End Role="RTLS_DEPARTMENTS" Type="Self.RTLS_DEPARTMENTS" Multiplicity="1" />
+    <End Role="RTLS_PERSONDTLS" Type="Self.RTLS_PERSONDTLS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RTLS_DEPARTMENTS">
+        <PropertyRef Name="dept_id" />
+      </Principal>
+      <Dependent Role="RTLS_PERSONDTLS">
+        <PropertyRef Name="DEPARTMENT_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RTLS_PERSONDTLS_DESG_FK">
+    <End Role="RTLS_DESIGNATIONS" Type="Self.RTLS_DESIGNATIONS" Multiplicity="1" />
+    <End Role="RTLS_PERSONDTLS" Type="Self.RTLS_PERSONDTLS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RTLS_DESIGNATIONS">
+        <PropertyRef Name="desg_id" />
+      </Principal>
+      <Dependent Role="RTLS_PERSONDTLS">
+        <PropertyRef Name="DESIGNATION_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RTLS_ZONEDTLS_GID_FK">
+    <End Role="RTLS_GATEWAY" Type="Self.RTLS_GATEWAY" Multiplicity="1" />
+    <End Role="RTLS_ZONEDTLS" Type="Self.RTLS_ZONEDTLS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RTLS_GATEWAY">
+        <PropertyRef Name="gid" />
+      </Principal>
+      <Dependent Role="RTLS_ZONEDTLS">
+        <PropertyRef Name="gid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RTLS_ZONEDTLS_PERSONID_FK">
+    <End Role="RTLS_PERSONDTLS" Type="Self.RTLS_PERSONDTLS" Multiplicity="0..1" />
+    <End Role="RTLS_ONLINEPERSONSTATUS" Type="Self.RTLS_ONLINEPERSONSTATUS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RTLS_PERSONDTLS">
+        <PropertyRef Name="PERSON_ID" />
+      </Principal>
+      <Dependent Role="RTLS_ONLINEPERSONSTATUS">
+        <PropertyRef Name="PERSONID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RTLS_ZONEDTLS_safe_unsafe_FKs">
+    <End Role="RTLS_Zone_Category" Type="Self.RTLS_Zone_Category" Multiplicity="1" />
+    <End Role="RTLS_ZONEDTLS" Type="Self.RTLS_ZONEDTLS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RTLS_Zone_Category">
+        <PropertyRef Name="ZCAT_NO" />
+      </Principal>
+      <Dependent Role="RTLS_ZONEDTLS">
+        <PropertyRef Name="safe_unsafe" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="rtlsdbStoreContainer">
+    <EntitySet Name="RTLS_DEPARTMENTS" EntityType="Self.RTLS_DEPARTMENTS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RTLS_DESIGNATIONS" EntityType="Self.RTLS_DESIGNATIONS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RTLS_GATEWAY" EntityType="Self.RTLS_GATEWAY" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RTLS_LOGINS" EntityType="Self.RTLS_LOGINS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RTLS_PERSONDTLS" EntityType="Self.RTLS_PERSONDTLS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RTLS_PERSONSIMEIDATA" EntityType="Self.RTLS_PERSONSIMEIDATA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RTLS_PERTRKFAULTINFO" EntityType="Self.RTLS_PERTRKFAULTINFO" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RTLS_SMS_TRANSACTIONS" EntityType="Self.RTLS_SMS_TRANSACTIONS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RTLS_STATUSES" EntityType="Self.RTLS_STATUSES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RTLS_Zone_Category" EntityType="Self.RTLS_Zone_Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RTLS_ZONEDTLS" EntityType="Self.RTLS_ZONEDTLS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RTLS_FAULT_DTLS" EntityType="Self.RTLS_FAULT_DTLS" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [RTLS_FAULT_DTLS].[ZONE_ID] AS [ZONE_ID], 
+    [RTLS_FAULT_DTLS].[faultno] AS [faultno], 
+    [RTLS_FAULT_DTLS].[fltname] AS [fltname], 
+    [RTLS_FAULT_DTLS].[FLTINFO] AS [FLTINFO], 
+    [RTLS_FAULT_DTLS].[PERSON_ID] AS [PERSON_ID], 
+    [RTLS_FAULT_DTLS].[TAG_ID] AS [TAG_ID], 
+    [RTLS_FAULT_DTLS].[DLTIME] AS [DLTIME], 
+    [RTLS_FAULT_DTLS].[DLYEAR] AS [DLYEAR], 
+    [RTLS_FAULT_DTLS].[ORC_DATETIME] AS [ORC_DATETIME], 
+    [RTLS_FAULT_DTLS].[CLEARED_TIME] AS [CLEARED_TIME], 
+    [RTLS_FAULT_DTLS].[CLEAREDYEAR] AS [CLEAREDYEAR], 
+    [RTLS_FAULT_DTLS].[CLEARED_DATETIME] AS [CLEARED_DATETIME], 
+    [RTLS_FAULT_DTLS].[FAULTLEVEL] AS [FAULTLEVEL], 
+    [RTLS_FAULT_DTLS].[CREATED_TIME] AS [CREATED_TIME]
+    FROM [dbo].[RTLS_FAULT_DTLS] AS [RTLS_FAULT_DTLS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="RTLS_ONLINEPERSONSTATUS" EntityType="Self.RTLS_ONLINEPERSONSTATUS" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [RTLS_ONLINEPERSONSTATUS].[PERSONID] AS [PERSONID], 
+    [RTLS_ONLINEPERSONSTATUS].[TAGID] AS [TAGID], 
+    [RTLS_ONLINEPERSONSTATUS].[Zone_ID] AS [Zone_ID], 
+    [RTLS_ONLINEPERSONSTATUS].[status] AS [status], 
+    [RTLS_ONLINEPERSONSTATUS].[TAG_SIGNALSTRENGTH] AS [TAG_SIGNALSTRENGTH], 
+    [RTLS_ONLINEPERSONSTATUS].[BS_SIGNALSTRENGTH] AS [BS_SIGNALSTRENGTH], 
+    [RTLS_ONLINEPERSONSTATUS].[INTIME] AS [INTIME], 
+    [RTLS_ONLINEPERSONSTATUS].[ALLISNOTWELLTIME] AS [ALLISNOTWELLTIME], 
+    [RTLS_ONLINEPERSONSTATUS].[PANICTIME] AS [PANICTIME], 
+    [RTLS_ONLINEPERSONSTATUS].[NOMOTIONTIME] AS [NOMOTIONTIME], 
+    [RTLS_ONLINEPERSONSTATUS].[OUT_TIME] AS [OUT_TIME], 
+    [RTLS_ONLINEPERSONSTATUS].[FOUT_TIME] AS [FOUT_TIME], 
+    [RTLS_ONLINEPERSONSTATUS].[TEMPEXCEEDTIME] AS [TEMPEXCEEDTIME], 
+    [RTLS_ONLINEPERSONSTATUS].[LOW_BATTERY_TIME] AS [LOW_BATTERY_TIME], 
+    [RTLS_ONLINEPERSONSTATUS].[LASTUPDATEDTIME] AS [LASTUPDATEDTIME], 
+    [RTLS_ONLINEPERSONSTATUS].[TAG_BATTERY_STATUS_VAL] AS [TAG_BATTERY_STATUS_VAL], 
+    [RTLS_ONLINEPERSONSTATUS].[TAG_BATTERY_STATUS_PERCNT] AS [TAG_BATTERY_STATUS_PERCNT], 
+    [RTLS_ONLINEPERSONSTATUS].[BS_BATTERY_STATUS_VAL] AS [BS_BATTERY_STATUS_VAL], 
+    [RTLS_ONLINEPERSONSTATUS].[BS_BATTERY_STATUS_PERCNT] AS [BS_BATTERY_STATUS_PERCNT], 
+    [RTLS_ONLINEPERSONSTATUS].[created_time] AS [created_time]
+    FROM [dbo].[RTLS_ONLINEPERSONSTATUS] AS [RTLS_ONLINEPERSONSTATUS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="RTLS_PERSONSTATUS" EntityType="Self.RTLS_PERSONSTATUS" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [RTLS_PERSONSTATUS].[person_id] AS [person_id], 
+    [RTLS_PERSONSTATUS].[tagid] AS [tagid], 
+    [RTLS_PERSONSTATUS].[zone_id] AS [zone_id], 
+    [RTLS_PERSONSTATUS].[status] AS [status], 
+    [RTLS_PERSONSTATUS].[stime] AS [stime], 
+    [RTLS_PERSONSTATUS].[created_time] AS [created_time]
+    FROM [dbo].[RTLS_PERSONSTATUS] AS [RTLS_PERSONSTATUS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="RTLS_PERSONSTATUS_HISTORY" EntityType="Self.RTLS_PERSONSTATUS_HISTORY" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [RTLS_PERSONSTATUS_HISTORY].[person_id] AS [person_id], 
+    [RTLS_PERSONSTATUS_HISTORY].[tagid] AS [tagid], 
+    [RTLS_PERSONSTATUS_HISTORY].[zone_id] AS [zone_id], 
+    [RTLS_PERSONSTATUS_HISTORY].[status] AS [status], 
+    [RTLS_PERSONSTATUS_HISTORY].[stime] AS [stime], 
+    [RTLS_PERSONSTATUS_HISTORY].[created_time] AS [created_time]
+    FROM [dbo].[RTLS_PERSONSTATUS_HISTORY] AS [RTLS_PERSONSTATUS_HISTORY]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="RTLS_SYNC_DTLS" EntityType="Self.RTLS_SYNC_DTLS" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [RTLS_SYNC_DTLS].[last_sync_time] AS [last_sync_time]
+    FROM [dbo].[RTLS_SYNC_DTLS] AS [RTLS_SYNC_DTLS]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="RTLS_TAG_ZONE_CONFIG" EntityType="Self.RTLS_TAG_ZONE_CONFIG" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [RTLS_TAG_ZONE_CONFIG].[TAGID] AS [TAGID], 
+    [RTLS_TAG_ZONE_CONFIG].[ZONE_ID] AS [ZONE_ID], 
+    [RTLS_TAG_ZONE_CONFIG].[CREATEDTIME] AS [CREATEDTIME], 
+    [RTLS_TAG_ZONE_CONFIG].[OPERATION_TYPE] AS [OPERATION_TYPE], 
+    [RTLS_TAG_ZONE_CONFIG].[PERSONDTLS_PERSON_ID] AS [PERSONDTLS_PERSON_ID]
+    FROM [dbo].[RTLS_TAG_ZONE_CONFIG] AS [RTLS_TAG_ZONE_CONFIG]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="RTLS_PERSONDTLS_DEPT_FK" Association="Self.RTLS_PERSONDTLS_DEPT_FK">
+      <End Role="RTLS_DEPARTMENTS" EntitySet="RTLS_DEPARTMENTS" />
+      <End Role="RTLS_PERSONDTLS" EntitySet="RTLS_PERSONDTLS" />
+    </AssociationSet>
+    <AssociationSet Name="RTLS_PERSONDTLS_DESG_FK" Association="Self.RTLS_PERSONDTLS_DESG_FK">
+      <End Role="RTLS_DESIGNATIONS" EntitySet="RTLS_DESIGNATIONS" />
+      <End Role="RTLS_PERSONDTLS" EntitySet="RTLS_PERSONDTLS" />
+    </AssociationSet>
+    <AssociationSet Name="RTLS_ZONEDTLS_GID_FK" Association="Self.RTLS_ZONEDTLS_GID_FK">
+      <End Role="RTLS_GATEWAY" EntitySet="RTLS_GATEWAY" />
+      <End Role="RTLS_ZONEDTLS" EntitySet="RTLS_ZONEDTLS" />
+    </AssociationSet>
+    <AssociationSet Name="RTLS_ZONEDTLS_PERSONID_FK" Association="Self.RTLS_ZONEDTLS_PERSONID_FK">
+      <End Role="RTLS_PERSONDTLS" EntitySet="RTLS_PERSONDTLS" />
+      <End Role="RTLS_ONLINEPERSONSTATUS" EntitySet="RTLS_ONLINEPERSONSTATUS" />
+    </AssociationSet>
+    <AssociationSet Name="RTLS_ZONEDTLS_safe_unsafe_FKs" Association="Self.RTLS_ZONEDTLS_safe_unsafe_FKs">
+      <End Role="RTLS_Zone_Category" EntitySet="RTLS_Zone_Category" />
+      <End Role="RTLS_ZONEDTLS" EntitySet="RTLS_ZONEDTLS" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

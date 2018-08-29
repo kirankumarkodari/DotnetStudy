@@ -1,0 +1,8 @@
+D:\Study\Dotnet\Learning_Excersizes\TimeLapseCreator\TimeLapseCreator\bin\x86\Debug\TimeLapseCreator.exe.config
+D:\Study\Dotnet\Learning_Excersizes\TimeLapseCreator\TimeLapseCreator\bin\x86\Debug\TimeLapseCreator.exe
+D:\Study\Dotnet\Learning_Excersizes\TimeLapseCreator\TimeLapseCreator\bin\x86\Debug\TimeLapseCreator.pdb
+D:\Study\Dotnet\Learning_Excersizes\TimeLapseCreator\TimeLapseCreator\bin\x86\Debug\AForge.Video.dll
+D:\Study\Dotnet\Learning_Excersizes\TimeLapseCreator\TimeLapseCreator\bin\x86\Debug\AForge.Video.FFMPEG.dll
+D:\Study\Dotnet\Learning_Excersizes\TimeLapseCreator\TimeLapseCreator\obj\x86\Debug\TimeLapseCreator.csprojResolveAssemblyReference.cache
+D:\Study\Dotnet\Learning_Excersizes\TimeLapseCreator\TimeLapseCreator\obj\x86\Debug\TimeLapseCreator.exe
+D:\Study\Dotnet\Learning_Excersizes\TimeLapseCreator\TimeLapseCreator\obj\x86\Debug\TimeLapseCreator.pdb
